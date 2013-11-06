@@ -1,0 +1,16 @@
+en:
+  flash:
+    contact_page:
+      success: 'The contact form was sent successfully.'
+
+  helpers:
+    label:
+      contact_page_presenter:
+        email: 'Email'
+        subject: 'Subject'
+        message: 'Message'
+
+    submit:
+      contact_page_presenter:
+        create: 'Submit'
+        submit: 'Submit'

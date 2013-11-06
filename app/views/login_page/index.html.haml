@@ -1,0 +1,27 @@
+.span12
+  = cms_tag(:h1, @obj, :headline)
+
+  = cms_tag(:div, @obj, :content)
+
+  = form_for(@presenter, url: cms_path(@obj)) do |form|
+    %fieldset
+      = hidden_field_tag(:return_to, params[:return_to])
+
+      .control-group
+        = form.label(:login)
+
+        .controls
+          = form.text_field(:login, required: true)
+
+      .control-group
+        = form.label(:password)
+
+        .controls
+          = form.password_field(:password, required: true)
+
+      .control-group
+        .controls
+          = form.submit(class: 'btn')
+
+  = link_to(cms_path(@obj.reset_password_page)) do
+    = t('login.show.reset_password')

@@ -1,0 +1,28 @@
+.span12
+  = cms_tag(:h1, @obj, :headline)
+
+  = cms_tag(:div, @obj, :content)
+
+  = form_for(@contact_page_presenter, url: cms_path(@obj)) do |form|
+    %fieldset
+      .control-group
+        = form.label(:email)
+
+        .controls
+          = form.email_field(:email, required: true)
+
+      .control-group
+        = form.label(:subject)
+
+        .controls
+          = form.text_field(:subject, required: true)
+
+      .control-group
+        = form.label(:message)
+
+        .controls
+          = form.text_area(:message, rows: 10)
+
+      .control-group
+        .controls
+          = form.submit(class: 'btn')
