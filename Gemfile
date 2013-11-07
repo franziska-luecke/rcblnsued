@@ -20,7 +20,8 @@ group :assets do
 
   gem 'uglifier', '>= 1.0.3'
 end
-
+gem 'pg'
+gem 'unicorn'
 gem 'jquery-rails'
 gem 'infopark_cloud_connector'
 gem 'infopark_kickstarter'
@@ -57,7 +58,6 @@ end
 group :test, :development do
   gem "pry-rails"
   gem "rails-footnotes"
-  gem "thin"
   gem "infopark_dashboard", ">= 0.0.2"
 end
 
