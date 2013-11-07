@@ -69,3 +69,5 @@ gem "gravatar_image_tag"
 group :production do
   gem "thin"
 end
+
+gem "projekktor-rails"
