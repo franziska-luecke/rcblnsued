@@ -20,7 +20,7 @@ group :assets do
 
   gem 'uglifier', '>= 1.0.3'
 end
-gem 'unicorn'
+gem 'pg'
 gem 'jquery-rails'
 gem 'infopark_cloud_connector'
 gem 'infopark_kickstarter'
